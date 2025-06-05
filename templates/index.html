@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Book Reviews</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+>
+<body>
+<h1>Book Reviews</h1>
+<a href="/submit">Submit a Review</a>
+<ul>
+  {% for title, author, review in reviews %}
+    <li><b>{{ title }}</b> by {{ author }}: {{ review }}</li>
+  {% endfor %}
+</ul>
+</body>
+</html>

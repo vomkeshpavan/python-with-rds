@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Submit Review</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+>
+<body>
+<h1>Submit a Review</h1>
+<form method="POST">
+  Title: <input name="title"><br>
+  Author: <input name="author"><br>
+  Review: <textarea name="review"></textarea><br>
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
