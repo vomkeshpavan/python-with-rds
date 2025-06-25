@@ -9,7 +9,7 @@ jobs:
 
       - name: Install pip and dependencies
         run: |
-          python3 -m ensurepip --upgrade || curl -O https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py
+          python3 -m pip install --upgrade pip
           python3 -m pip install pytest
 
       - name: Run Tests
