@@ -14,5 +14,5 @@ jobs:
 
       - name: Run Tests
         run: |
-          python3 -m pytest tests/ --junitxml=report.xml
+          python3 -m pytest  python-with-rds/ --junitxml=report.xml
 
